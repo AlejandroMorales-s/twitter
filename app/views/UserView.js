@@ -5,6 +5,10 @@ class UserView {
             return {
                 error: 'payload no existe'
             }
+        } else if(Object.values(payload).includes(null) === true) {
+            return {
+                error: 'necesitan tener un valor válido'
+            }
         }
     }
 }
