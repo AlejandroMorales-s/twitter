@@ -13,6 +13,8 @@ class UserView {
             return {
                 error: 'necesitan tener un valor válido'
             }
+        } else {
+            return payload;
         }
     }
 }
